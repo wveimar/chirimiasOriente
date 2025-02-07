@@ -534,7 +534,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(image/inner_colors_03.jpg);
+    background-image: url(image/inner_colors_02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -732,7 +732,8 @@ body {
 .follow_us{
     flex-direction: column;
     position: relative;
-    background-color: var(--secondary-color);
+    background: linear-gradient(to right, #a0ffc0, #31e367); 
+
     padding-bottom: 0;
 }
 
@@ -745,8 +746,8 @@ body {
 }
 
 .follow_us_info h2{
-    color: var(--secondar-light);
-    font-size: 4rem;
+    color: var(--secondary-color);
+    font-size: 3rem;
     font-weight: 500;
 }
 .social_icon_follow_info{
@@ -757,8 +758,8 @@ body {
     gap: 30px;
 }
 .social_icon_follow_info i{
-    font-size: 1.5rem;
-    color: var(--secondar-light);   
+    font-size: 3.5rem;
+    color: var(--secondary-color);  
     transition: var(--transition-slow);
 }
 
@@ -774,6 +775,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to right, var(--primary-color), #53a1d4); 
 }
 
 .footer_right {
@@ -800,7 +802,7 @@ footer {
     align-items: center;
     gap: 30px;
     padding: 50px;
-    background-color: var(--primary-color);
+    
 }
 
 .footer_container {
