@@ -207,20 +207,20 @@ body {
 }
 
 
-.menu .social_icon {
+.social_icon {
     display: flex;
     gap: 12px;
     padding-left: 30px;
 }
 
-.menu .social_icon i {
+.social_icon i {
     color: var(--white);
     font-size: 2rem;
     transition: var(--transition-fast);
 }
 
 
-.menu .social_icon i:hover {
+.social_icon i:hover {
     color: var(--secondary-color);
 }
 
@@ -965,9 +965,9 @@ footer {
         padding: 12px 0;
     }
 
-    .menu li:nth-child(7) {
+    /* .menu li:nth-child(7) {
         display: none;
-    }
+    } */
 
     #toggle {
         display: block;
