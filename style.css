@@ -234,22 +234,46 @@ body {
 
 /* Hero section */
 .hero {
-	min-height: 100vh;
+	margin-top: 90px;
+	min-height: calc(100vh - 90px);
 	position: relative;
 	padding: 0;
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px); /* Comienza un poco más abajo */
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0); /* Termina en su posición original */
+	}
 }
 
 .hero_title {
 	position: absolute;
 	top: 50%;
-	left: 28%;
+	left: 50%;
 	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	color: #fcf5d2;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	font-size: 5rem;
+	max-width: 90%;
+	margin: 0 auto;
+	z-index: 100;
+	animation: fadeInUp 2s ease-in-out; /* Aumentar la duración a 2s */
 }
 
 .hero_title span {
 	color: var(--white);
 	font-size: 8.5rem;
-	line-height: 9.5rem;
+	
 }
 
 .hero_slide {
@@ -358,9 +382,10 @@ body {
 .hero_slide3 {
 	height: 100%;
 	width: 100%;
-	background: rgb(58, 101, 180);
-	background: linear-gradient(90deg, rgb(22, 147, 250) 0%, rgb(252, 211, 29) 50%, rgb(80, 230, 117) 100%);
-	position: relative;
+	background-image: url(image/hero_home_01_03.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 	overflow: hidden;
 }
 
